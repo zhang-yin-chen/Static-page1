@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            position: fixed;
+            width: 300px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        img{
+            width: 300px;
+            border-radius: 10px;
+        }
+        .center{
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+           
+            color: white;
+            opacity: 0.9; 
+        }
+        h2{   
+            line-height: 60px;
+        }
+        p{
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+        a{
+           font-size: 10px;
+           border: 1px solid white;
+           padding: 5px 26px;
+           text-decoration: none;
+        }
+        a:link{           
+            color: white;      
+        }
+        a:visited{
+            color: white;
+        }
+        a:hover{
+            border: 1px solid red;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <figure class="box">
+        <figcaption class="center">
+            <!--文字内容自定-->
+            <h2>Beauty Makeup</h2>
+                <p>
+                  Every Girl loves to be beautiful.
+                  <br>
+                  As the saying goes, there are no ugly Girl in the world.Only lazy women
+                </p>
+                <a href="#">Get in Touch</a>
+        </figcaption>
+        <img src="../img/背景.jpg"> 
+    </figure>
+</body>
+</html>

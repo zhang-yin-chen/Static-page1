@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .parents{
+            padding: 20px;
+            overflow: hidden;
+        }
+        .card {
+            margin-right: 10px;
+            float: left;
+            width: 402px;
+            box-shadow: 0px 0px 20px #888;
+        }
+
+        .box {
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        .fill {
+            width: 400px;
+            height: 300px;
+            object-fit: fill;
+        }
+        .cover {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .contain {
+            width: 400px;
+            height: 300px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parents">
+        <div class="card">
+            <!--图片框设置400像素宽 300像素高-->
+            <div class="box">
+                <img src="../img/mountain.jpg" class="fill"/>
+            </div>
+            <!--文本不换行,溢出省略号表示-->
+            <p class="container">
+                这是一些文本 这是一些文本 这是一些文本这是一些文本 这是一些文本
+                这是一些文本这是一些文本 这是一些文本 这是一些文本
+            </p>
+        </div>
+        <div class="card">
+            <!--图片框设置400像素宽 300像素高-->
+            <div class="box">
+                <img src="../img/mountain.jpg" class="cover"/>
+            </div>
+            <!--文本不换行,溢出省略号表示-->
+            <p class="container">
+                这是一些文本 这是一些文本 这是一些文本这是一些文本 这是一些文本
+                这是一些文本这是一些文本 这是一些文本 这是一些文本
+            </p>
+        </div>
+        <div class="card">
+            <!--图片框设置400像素宽 300像素高-->
+            <div class="box">
+                <img src="../img/mountain.jpg" class="contain"/>
+            </div>
+            <!--文本不换行,溢出省略号表示-->
+            <p class="container">
+                这是一些文本 这是一些文本 这是一些文本这是一些文本 这是一些文本
+                这是一些文本这是一些文本 这是一些文本 这是一些文本
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
